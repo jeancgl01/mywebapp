@@ -1,0 +1,26 @@
+@page
+
+<h1>Bienvenidos a la universidad deLasalle Bajío campus salamanca</h1>
+<p>@DateTime.Now</p>
+<p>Fecha y hora</p>
+@{
+   var juan = new Person();
+   juan.Name = "Juan carlos";
+   juan.Age = 20; 
+}
+
+<h2>@juan.Name</h2>
+<p>Tiene la edad de @juan.Age</
+<p>@{ var i = 0;
+        var j = 2;
+    } @i</p>
+
+@functions {
+
+    public class Person {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
+
+    
+}
