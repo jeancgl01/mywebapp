@@ -1,4 +1,6 @@
 @page
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
 
 <h1>Bienvenidos a la universidad deLasalle Bajío campus salamanca</h1>
 <p>@DateTime.Now</p>
@@ -15,6 +17,8 @@
     var i = 0;
 }
 <p>@i</p>
+
+<h1>@Configuration["message"]</h1>
 
 @functions {
 
